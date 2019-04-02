@@ -1,5 +1,5 @@
 <?php
-require ('fonction.php');
+
 
 $days = 7;  
 $path = './upload/';  

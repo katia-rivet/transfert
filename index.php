@@ -1,6 +1,6 @@
 <?php
-require ('upload.php');
-require_once ('connexion.php');
+require ('fonction.php');
+require_once ('databaseConnection.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,20 +28,20 @@ require_once ('connexion.php');
 </head>
 <body>
 
+<!-- Formulaire -->
+    <form action="" method="POST" enctype="multipart/form-data">
+    <input type="file" name="fileToUpload" multiple='multiple'>
+    <input type="submit">
+    </form>
 
-<form action="" method="POST" enctype="multipart/form-data">
-<input type="file" name="fileToUpload" multiple='multiple'>
-<input type="submit">
-</form>
 
 
+    <?php
+    uploadFiles();
 
-<?php
-uploadFiles();
+    require ('delete.php');
 
-require ('delete.php');
-
-?>
+    ?>
 
 
 

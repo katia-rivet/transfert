@@ -3,7 +3,7 @@
 Upload de fichier
 */
 
-require_once ('databaseConnection.php');
+
 
 function uploadFiles(){ 
 
